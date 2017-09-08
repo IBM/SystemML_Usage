@@ -44,11 +44,11 @@ Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By sig
 
 If you are already using default services ``DSX-Spark`` and ``DSX-ObjectStore`` for other application, you can create new instance of "Apache Spark" as described below.
 
-Create "Apache Spark" instance:
+How to create ``Apache Spark`` instance:
 * Login/Sign up in the [Bluemix](http://bluemix.net)
-* Go to "Dashboard" using menu located at top left corner.
-* Go to "Data & Analytics" section.
-* Click on "Apache Spark" service. Enter service name say "DSX-SystemML".
+* Go to ``Dashboard`` using menu located at top left corner.
+* Go to ``Data & Analytics`` section.
+* Click on ``Apache Spark`` service. Enter service name, e.g. ``DSX-SystemML``.
 
 ![](doc/source/images/create_spark_instance.png)
 
@@ -60,11 +60,11 @@ Create the Project:
 * Choose a ``Name`` and, optionally, a ``Description``. Accept the default ``DSX-Spark`` for Spark Service, ``Object Storage (Swift API)`` for Storage Type, and ``DSX-ObjectStorage`` for Target Object Storage Instance.
 * Click ``Create``.
 
-Create the Notebook:
+How to create the Notebook:
 * In you project, click ``add notebooks``.
 * Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
 * In the ``Notebook URL`` box put: https://github.com/asurve/SystemML_Demo/blob/master/notebooks/Machine-Learning-Using-Apache-SystemML.ipynb
-* Accept the default ``DSX-Spark`` for Spark Service and click ``Create Notebook``. If you plan to use other "Apache Spark" instance, please select the one you intended to use.
+* Enter ``Spark Service`` instance name and click ``Create Notebook``. This name could be ``DSX-Spark`` if you are using default instance comes with DSX account or ``DSX-SystemML`` if you have specified this name while creating new ``Apache Spark`` instance.
 
 ![](doc/source/images/create_notebook.png)
 
