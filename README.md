@@ -63,7 +63,7 @@ Create the Project:
 How to create the Notebook:
 * In you project, click ``add notebooks``.
 * Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
-* In the ``Notebook URL`` box put: https://github.com/asurve/SystemML_Demo/blob/master/notebooks/Machine-Learning-Using-Apache-SystemML.ipynb
+* In the ``Notebook URL`` box put: https://github.com/IBM/SystemML/blob/master/notebooks/Machine-Learning-Using-Apache-SystemML.ipynb
 * Enter ``Spark Service`` instance name and click ``Create Notebook``. This name could be ``DSX-Spark`` if you are using default instance comes with DSX account or ``DSX-SystemML`` if you have specified this name while creating new ``Apache Spark`` instance.
 
 ![](doc/source/images/create_notebook.png)
