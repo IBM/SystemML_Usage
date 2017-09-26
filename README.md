@@ -26,7 +26,7 @@ The intended audience for this journey is application developers and other stake
 
 # Watch the Video
 
-[![](http://img.youtube.com/vi/cYUdXFEmxP4/0.jpg)](https://www.youtube.com/watch?v=YrjnXucOLSE)
+[![](http://img.youtube.com/vi/cYUdXFEmxP4/0.jpg)](https://www.youtube.com/watch?v=i0pcqvSAAss)
 
 # Steps
 
