@@ -25,7 +25,7 @@ The intended audience for this journey is application developers and other stake
 
 # Watch the Video
 
-[![](http://img.youtube.com/vi/cYUdXFEmxP4/0.jpg)](https://www.youtube.com/watch?v=YrjnXucOLSE)
+[![](http://img.youtube.com/vi/cYUdXFEmxP4/0.jpg)](https://www.youtube.com/watch?v=i0pcqvSAAss)
 
 # Steps
 
@@ -66,7 +66,7 @@ Create the Notebook:
 * Click on your project to open up the project details panel.
 * Click ``add notebooks``.
 * Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
-* For ``Notebook URL`` enter: https://github.com/IBM/SystemML/blob/master/notebooks/Machine-Learning-Using-Apache-SystemML.ipynb
+* For ``Notebook URL`` enter: https://github.com/IBM/SystemML_Usage/blob/master/notebooks/Machine-Learning-Using-Apache-SystemML.ipynb
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 
