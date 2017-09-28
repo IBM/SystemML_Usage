@@ -1,6 +1,6 @@
 # Machine Learning using an Apache SystemML in the  Data Science Experience (DSX) environment
 
-In this developer journey we will use Apache SystemML running on IBM Data Science Experience (DSX) to do Machine Learning exercise. DSX is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data.
+In this developer journey we will use Apache SystemML running on IBM Data Science Experience (DSX) to perform a Machine Learning exercise. DSX is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data.
 
 When the reader has completed this journey, they will understand how to:
 
@@ -8,21 +8,20 @@ When the reader has completed this journey, they will understand how to:
 * Run Notebooks in [IBM Data Science Experience](https://datascience.ibm.com/)
 * Leverage [Apache SystemML](http://systemml.apache.org) as a machine learning library
 
-The intended audience for this journey is application developers and other stakeholders who wish to utilize the power of Data Science quickly and effectively to solve machine learning problem using Apache SystemML. In this case, Linear Regression example provided to demonstrate ease and power of Apache SystemML. There are various out of box algorithms provided by Apache SystemML. User can develop their own algorithms using Apache SystemML's Declarative Machine Language (DML) which has R or Python like syntax or customize any algorithm provided in the package. For more information about additional functionality support, documentation, roadmap please visit [Apache SystemML](http://systemml.apache.org)
+The intended audience for this journey is application developers and other stakeholders who wish to utilize the power of Data Science quickly and effectively to solve machine learning problems using Apache SystemML. In this case, a Linear Regression example is provided to demonstrate the ease and power of Apache SystemML. There are various out of box algorithms provided by Apache SystemML. Users can develop their own algorithms using Apache SystemML's Declarative Machine Language (DML) which has R or Python like syntax, or customize any algorithm provided in the package. For more information about additional functionality support, documentation, and roadmap, please visit [Apache SystemML](http://systemml.apache.org)
 
 # Included Components
 
 * [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
-* [Bluemix Spark](https://console.bluemix.net/catalog/services/apache-spark)
-* Cloud Object Storage
+* [IBM Analytics for Apache Spark](https://console.ng.bluemix.net/catalog/services/apache-spark): An open source cluster computing framework optimized for extremely fast and large scale data processing.
+* [Bluemix Object Storage](https://console.bluemix.net/catalog/services/object-storage): Build and deliver cost effective apps and services with high reliability and fast speed to market in an unstructured cloud data store.
 
 ## Featured technologies
 
 * [Jupyter Notebooks](http://jupyter.org/): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
-
 * [Apache SystemML](http://systemml.apache.org) an open source machine learning library. It allows data scientists to express machine learning algorithms through declarative language (DML) using R or Python like syntax.
 
-![](doc/source/images/SystemML_StateOfTheArt.png)
+![](doc/source/images/architecture.png)
 
 # Watch the Video
 
@@ -30,8 +29,7 @@ The intended audience for this journey is application developers and other stake
 
 # Steps
 
-Follow these steps to setup and run this developer journey. These steps are
-described in detail below.
+Follow these steps to setup and run this developer journey. These steps are described in detail below.
 
 1. [Sign up for the Data Science Experience](#1-sign-up-for-the-data-science-experience)
 2. [Create the notebook](#2-create-the-notebook)
@@ -40,33 +38,39 @@ described in detail below.
 
 ## 1. Sign up for the Data Science Experience
 
-Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account.
+Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
 
-If you are already using default services ``DSX-Spark`` and ``DSX-ObjectStore`` for other application, you can create new instance of "Apache Spark" as described below.
+To create these services:
+* Login to your [Bluemix](http://bluemix.net) account.
+* Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If not already used, name your service ``DSX-Spark``. 
+* Create your Object Storage service by selecting the service type [Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/object-storage-group). If not already used, name your service ``DSX-ObjectStorage``.
 
-How to create ``Apache Spark`` instance:
-* Login/Sign up in the [Bluemix](http://bluemix.net)
-* Go to ``Dashboard`` using menu located at top left corner.
-* Go to ``Data & Analytics`` section.
-* Click on ``Apache Spark`` service. Enter service name, e.g. ``DSX-SystemML``.
+> Note: When creating your Object Storage service, select the ``Swift`` storage type in order to avoid having to pay an upgrade fee.
 
-![](doc/source/images/create_spark_instance.png)
+Take note of your service names as you will need to select them in the following steps.
 
 ## 2. Create the notebook
 
-Create the Project:
+First you must create a new Project:
 * From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
-* Click on ``+ Create Project`` or ``+ New Project`` under Recently updated projects.
-* Choose a ``Name`` and, optionally, a ``Description``. Accept the default ``DSX-Spark`` for Spark Service, ``Object Storage (Swift API)`` for Storage Type, and ``DSX-ObjectStorage`` for Target Object Storage Instance.
+* Click on ``New project`` under ``Recently updated projects``.
+* Enter a ``Name`` and optional ``Description``. 
+* For ``Spark Service``, select your Apache Spark service name.
+* For ``Storage Type``, select the ``Object Storage (Swift API)`` option.
+* For ``Target Object Storage Instance``, select your Object Storage service name.
 * Click ``Create``.
 
-How to create the Notebook:
-* In you project, click ``add notebooks``.
-* Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
-* In the ``Notebook URL`` box put: https://github.com/IBM/SystemML_Usage/blob/master/notebooks/Machine-Learning-Using-Apache-SystemML.ipynb
-* Enter ``Spark Service`` instance name and click ``Create Notebook``. This name could be ``DSX-Spark`` if you are using default instance comes with DSX account or ``DSX-SystemML`` if you have specified this name while creating new ``Apache Spark`` instance.
+![](doc/source/images/create-project.png)
 
-![](doc/source/images/create_notebook.png)
+Create the Notebook:
+* Click on your project to open up the project details panel.
+* Click ``add notebooks``.
+* Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
+* For ``Notebook URL`` enter: https://github.com/IBM/SystemML_Usage/blob/master/notebooks/Machine-Learning-Using-Apache-SystemML.ipynb
+* For ``Spark Service``, select your Apache Spark service name.
+* Click ``Create Notebook``.
+
+![](doc/source/images/create-notebook.png)
 
 ## 3. Run the notebook
 
@@ -94,9 +98,7 @@ There are several ways to execute the code cells in your notebook:
     panel. Here you can schedule your notebook to be executed once at some future
     time, or repeatedly at your specified interval.
 
-
 ## 4. Save and Share
-
 
 ### How to save your work:
 
@@ -121,8 +123,6 @@ options to specify exactly what you want shared from your notebook:
   your dashDB credentials from being shared.
 * `All content, including code`: displays the notebook as is.
 * A variety of `download as` options are also available in the menu.
-
-
 
 # License
 
