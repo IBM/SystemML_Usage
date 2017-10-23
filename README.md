@@ -10,6 +10,18 @@ When you have completed this journey, you will understand how to:
 
 The intended audience for this journey is both application developers and other stakeholders who wish to utilize the power of Data Science quickly and effectively to solve machine learning problems using Apache SystemML. Although Apache SystemML provides various out-of-the box algorithms to experiment with, this specific journey will provide a Linear Regression example to demonstrate the ease and power of Apache SystemML. Additionally, users can develop their own algorithms using Apache SystemML's Declarative Machine Language (DML) which has R or Python like syntax, or customize any algorithm provided in the package. For more information about additional functionality support, documentation, and the roadmap, please visit [Apache SystemML](http://systemml.apache.org).
 
+![](doc/source/images/architecture.png)
+
+## Flow
+
+1. Load the provided notebook onto the IBM Data Science Experience platform.
+
+2. The notebook interacts with an Apache Spark instance.
+
+3. A sample big data dataset is loaded into the Jupyter Notebook.
+
+4. To perform machine learning, Apache SystemML is used atop Apache Spark.
+
 ## Included Components
 
 * [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
@@ -21,7 +33,9 @@ The intended audience for this journey is both application developers and other 
 * [Jupyter Notebooks](http://jupyter.org/): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
 * [Apache SystemML](http://systemml.apache.org): An open source machine learning library. It allows data scientists to express machine learning algorithms through declarative language (DML) using R or Python like syntax.
 
-![](doc/source/images/architecture.png)
+### State of the art
+
+![](doc/source/images/state-of-the-art.png)
 
 # Watch the Video
 
@@ -42,7 +56,7 @@ Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By sig
 
 To create these services:
 * Login or create your [Bluemix](http://bluemix.net) account.
-* Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If the name has not already been used, name your service ``DSX-Spark`` so that you can keep track of it. 
+* Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If the name has not already been used, name your service ``DSX-Spark`` so that you can keep track of it.
 * Create your Object Storage service by selecting the service type [Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/object-storage-group). If the name has not already been used, name your service ``DSX-ObjectStorage`` so that you can keep track of it.
 
 > Note: When creating your Object Storage service, select the ``Swift`` storage type in order to avoid having to pay an upgrade fee.
@@ -54,7 +68,7 @@ Take note of your service names as you will need to select them in the following
 First you must create a new Project:
 * From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
 * Click on ``New project`` under ``Recently updated projects``.
-* Enter a ``Name`` and optional ``Description``. 
+* Enter a ``Name`` and optional ``Description``.
 * For ``Spark Service``, select your Apache Spark service name.
 * For ``Storage Type``, select the ``Object Storage (Swift API)`` option.
 * For ``Target Object Storage Instance``, select your Object Storage service name.
