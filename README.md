@@ -34,6 +34,10 @@ The intended audience for this journey is both application developers and other 
 
 ![](doc/source/images/state-of-the-art.png)
 
+Typically data scientist writes an algorithm on subset of dataset which can be fit on the workstation (laptop) disk/memory. Once he/she is satisfied with the results on a workstation, he/she approach system engineer to implement same algorithm in the distributed environment with much bigger dataset. It may takes weeks if not months to go back and forth between data scientist and system engineer to have equivalent algorithm gets implemented in distributed environment on bigger dataset. As human intervention gets involved there is a potential for introduction of bugs in an implementation of equivalent algorithm. When final algorithm is ready it cannot be determined if final algorithm is equivalent to that of an algorithm which was implemented to run it on a workstation. Its hard to determine if any issues found are due to implementation of algorithm in distributed environment or due to an original algorithm itself.
+
+There comes the “State of the Art” from SystemML. With SystemML data scientist has to write an algorithm only once. With in-built optimizer from SystemML, any algorithm written will have dynamic runtime plan based on data characteristics and runtime environment such as single machine or cluster with multiple nodes. Data Scientist can save lot of time and possible error injection while transforming algorithm implemented to run on single machine to algorithm to be run in a distributed environment.
+
 # Watch the Video
 
 [![](http://img.youtube.com/vi/cYUdXFEmxP4/0.jpg)](https://www.youtube.com/watch?v=i0pcqvSAAss)
