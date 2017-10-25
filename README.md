@@ -15,11 +15,8 @@ The intended audience for this journey is both application developers and other 
 ## Flow
 
 1. Load the provided notebook onto the IBM Data Science Experience platform.
-
 2. The notebook interacts with an Apache Spark instance.
-
 3. A sample big data dataset is loaded into the Jupyter Notebook.
-
 4. To perform machine learning, Apache SystemML is used atop Apache Spark.
 
 ## Included Components
