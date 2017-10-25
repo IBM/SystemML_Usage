@@ -40,7 +40,7 @@ There comes the “State of the Art” from SystemML. With SystemML data scienti
 
 # Watch the Video
 
-[![](http://img.youtube.com/vi/cYUdXFEmxP4/0.jpg)](https://www.youtube.com/watch?v=i0pcqvSAAss)
+[![](http://img.youtube.com/vi/cYUdXFEmxP4/0.jpg)](https://www.youtube.com/watch?v=BaZPshqBFHg)
 
 # Steps
 
