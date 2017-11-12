@@ -1,14 +1,14 @@
 # Using Apache SystemML for Machine Learning in a Data Science Experience (DSX) Notebook
 
-In this developer journey we will use Apache SystemML running on IBM Data Science Experience (DSX) to perform a Machine Learning exercise. DSX is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data. Apache SystemML is a flexible machine learning platform that is optimized to scale with large data sets.
+In this Code Pattern we will use Apache SystemML running on IBM Data Science Experience (DSX) to perform a Machine Learning exercise. DSX is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data. Apache SystemML is a flexible machine learning platform that is optimized to scale with large data sets.
 
-When you have completed this journey, you will understand how to:
+When you have completed this Code Pattern, you will understand how to:
 
 * Use [Jupyter Notebooks](http://jupyter.org/) to load, visualize, and analyze data
 * Run Notebooks in [IBM Data Science Experience](https://datascience.ibm.com/)
 * Leverage [Apache SystemML](http://systemml.apache.org) as a machine learning library
 
-The intended audience for this journey is both application developers and other stakeholders who wish to utilize the power of Data Science quickly and effectively to solve machine learning problems using Apache SystemML. Although Apache SystemML provides various out-of-the box algorithms to experiment with, this specific journey will provide a Linear Regression example to demonstrate the ease and power of Apache SystemML. Additionally, users can develop their own algorithms using Apache SystemML's Declarative Machine Language (DML) which has R or Python like syntax, or customize any algorithm provided in the package. For more information about additional functionality support, documentation, and the roadmap, please visit [Apache SystemML](http://systemml.apache.org).
+The intended audience for this Code Pattern is both application developers and other stakeholders who wish to utilize the power of Data Science quickly and effectively to solve machine learning problems using Apache SystemML. Although Apache SystemML provides various out-of-the box algorithms to experiment with, this specific Code Pattern will provide a Linear Regression example to demonstrate the ease and power of Apache SystemML. Additionally, users can develop their own algorithms using Apache SystemML's Declarative Machine Language (DML) which has R or Python like syntax, or customize any algorithm provided in the package. For more information about additional functionality support, documentation, and the roadmap, please visit [Apache SystemML](http://systemml.apache.org).
 
 ![](doc/source/images/architecture.png)
 
@@ -43,7 +43,7 @@ There comes the “State of the Art” from SystemML. With SystemML data scienti
 
 # Steps
 
-Follow these steps to setup and run this developer journey. These steps are described in detail below.
+Follow these steps to setup and run this Code Pattern. These steps are described in detail below.
 
 1. [Sign up for the Data Science Experience](#1-sign-up-for-the-data-science-experience)
 2. [Create the notebook](#2-create-the-notebook)
@@ -52,10 +52,10 @@ Follow these steps to setup and run this developer journey. These steps are desc
 
 ## 1. Sign up for the Data Science Experience
 
-Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services will be created in your Bluemix account: ``DSX-Spark`` and ``DSX-ObjectStore``. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
+Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services will be created in your IBM Cloud account: ``DSX-Spark`` and ``DSX-ObjectStore``. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
 
 To create these services:
-* Login or create your [Bluemix](http://bluemix.net) account.
+* Login or create your [IBM Cloud](http://bluemix.net) account.
 * Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If the name has not already been used, name your service ``DSX-Spark`` so that you can keep track of it.
 * Create your Object Storage service by selecting the service type [Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/object-storage-group). If the name has not already been used, name your service ``DSX-ObjectStorage`` so that you can keep track of it.
 
@@ -137,6 +137,21 @@ options to specify exactly what you want shared from your notebook:
   your dashDB credentials from being shared.
 * `All content, including code`: displays the notebook as is.
 * A variety of `download as` options are also available in the menu.
+
+# Links
+* [Demo on Youtube](https://www.youtube.com/watch?v=Jxi7U7VOMYg): Watch the video.
+* [What is SystemML](https://www.youtube.com/watch?v=hJfubEYDiQ8&t=428s): A video of a Chicago Spark meetup that outlines Apache SystemML basics. 
+* [SystemML introduction and demo](http://cleverowl.uk/2016/05/30/systemml-introduction-and-demo): A detailed video introduction to Apache SystemML. 
+* [Machine Learning Framework survey results](https://www.microway.com/hpc-tech-tips/deep-learning-frameworks-survey-tensorflow-torch-theano-caffe-neon-ibm-machine-learning-stack/): An examination of current major deep learning frameworks, including a comparison of native language of framework, multi-GPU support, and aspects of usability.
+
+# Learn more
+
+* **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/code/technologies/data-science/)
+* **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
+* **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
+* **Data Science Experience**: Master the art of data science with IBM's [Data Science Experience](https://datascience.ibm.com/)
+* **PowerAI**: Get started or get scaling, faster, with a software distribution for machine learning running on the Enterprise Platform for AI: [IBM Power Systems](https://www.ibm.com/ms-en/marketplace/deep-learning-platform)
+* **Spark on IBM Cloud**: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our [Spark service](https://console.bluemix.net/catalog/services/apache-spark)
 
 # License
 
