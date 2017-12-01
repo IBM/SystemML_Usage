@@ -140,8 +140,8 @@ options to specify exactly what you want shared from your notebook:
 
 # Links
 * [Demo on Youtube](https://www.youtube.com/watch?v=Jxi7U7VOMYg): Watch the video.
-* [What is SystemML](https://www.youtube.com/watch?v=hJfubEYDiQ8&t=428s): A video of a Chicago Spark meetup that outlines Apache SystemML basics. 
-* [SystemML introduction and demo](http://cleverowl.uk/2016/05/30/systemml-introduction-and-demo): A detailed video introduction to Apache SystemML. 
+* [What is SystemML](https://www.youtube.com/watch?v=hJfubEYDiQ8&t=428s): A video of a Chicago Spark meetup that outlines Apache SystemML basics.
+* [SystemML introduction and demo](http://cleverowl.uk/2016/05/30/systemml-introduction-and-demo): A detailed video introduction to Apache SystemML.
 * [Machine Learning Framework survey results](https://www.microway.com/hpc-tech-tips/deep-learning-frameworks-survey-tensorflow-torch-theano-caffe-neon-ibm-machine-learning-stack/): An examination of current major deep learning frameworks, including a comparison of native language of framework, multi-GPU support, and aspects of usability.
 
 # Learn more
