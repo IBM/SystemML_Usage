@@ -126,7 +126,7 @@ Under the `File` menu, there are several ways to save your notebook:
 
 ### How to share your work:
 
-You can share your notebook by selecting the “Share” button located in the top
+You can share your notebook by selecting the `Share` button located in the top
 right section of your notebook panel. The end result of this action will be a URL
 link that will display a “read-only” version of your notebook. You have several
 options to specify exactly what you want shared from your notebook:
