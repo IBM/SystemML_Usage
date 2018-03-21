@@ -52,7 +52,9 @@ Follow these steps to setup and run this Code Pattern. These steps are described
 
 ## 1. Sign up for the Watson Studio
 
-Sign up for IBM's [Watson Studio](http://datascience.ibm.com/). By signing up for the Watson Studio, two services will be created in your IBM Cloud account: ``Apache Spark`` and ``Object Storage``. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
+Sign up for IBM's [Watson Studio](https://dataplatform.ibm.com). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. Take note of your service names as you will need to select them in the following steps.
+
+> Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
 
 To create these services:
 * Login or create your [IBM Cloud](http://bluemix.net) account.
@@ -77,10 +79,14 @@ First you must create a new Project:
 ![](doc/source/images/create-project.png)
 
 Create the Notebook:
-* Click on your project to open up the project details panel.
-* Click ``add notebooks``.
-* Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
+* In [Watson Studio](https://dataplatform.ibm.com), click on `Create notebook` to create a notebook.
+* Create a project if necessary, provisioning an object storage service if required.
+* In the `Assets` tab, select the `Create notebook` option.
+* Select the `From URL` tab.
+* Enter a name for the notebook.
+* Optionally, enter a description for the notebook.
 * For ``Notebook URL`` enter: https://github.com/IBM/SystemML_Usage/blob/master/notebooks/Machine-Learning-Using-Apache-SystemML.ipynb
+* Select the free Anaconda runtime.
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 
