@@ -52,11 +52,11 @@ Follow these steps to setup and run this Code Pattern. These steps are described
 
 ## 1. Sign up for the Watson Studio
 
-Sign up for IBM's [Watson Studio](http://datascience.ibm.com/). By signing up for the Watson Studio, two services will be created in your IBM Cloud account: ``Watson Studio-Spark`` and ``Watson Studio-ObjectStore``. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
+Sign up for IBM's [Watson Studio](http://datascience.ibm.com/). By signing up for the Watson Studio, two services will be created in your IBM Cloud account: ``Apache Spark`` and ``Object Storage``. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
 
 To create these services:
 * Login or create your [IBM Cloud](http://bluemix.net) account.
-* Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If the name has not already been used, name your service ``Watson Studio-Spark`` so that you can keep track of it.
+* Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If the name has not already been used, name your service ``Apache Spark`` so that you can keep track of it.
 * Create your Object Storage service by selecting the service type [Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/object-storage-group). If the name has not already been used, name your service ``Watson Studio-ObjectStorage`` so that you can keep track of it.
 
 > Note: When creating your Object Storage service, select the ``Swift`` storage type in order to avoid having to pay an upgrade fee.
