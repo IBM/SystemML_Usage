@@ -87,7 +87,6 @@ Create the Notebook:
 * Optionally, enter a description for the notebook.
 * For ``Notebook URL`` enter: https://github.com/IBM/SystemML_Usage/blob/master/notebooks/Machine-Learning-Using-Apache-SystemML.ipynb
 * Select the free Anaconda runtime.
-* For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 
 ![](doc/source/images/create-notebook.png)
