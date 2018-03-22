@@ -1,11 +1,13 @@
-# Using Apache SystemML for Machine Learning in a Data Science Experience (DSX) Notebook
+# Using Apache SystemML for Machine Learning in a Watson Studio Notebook
 
-In this Code Pattern we will use Apache SystemML running on IBM Data Science Experience (DSX) to perform a Machine Learning exercise. DSX is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data. Apache SystemML is a flexible machine learning platform that is optimized to scale with large data sets.
+> Data Science Experience is now Watson Studio. Although some images in this code pattern may show the service as Data Science Experience, the steps and processes will still work.
+
+In this Code Pattern we will use Apache SystemML running on IBM Watson Studio to perform a Machine Learning exercise. Watson Studio is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data. Apache SystemML is a flexible machine learning platform that is optimized to scale with large data sets.
 
 When you have completed this Code Pattern, you will understand how to:
 
 * Use [Jupyter Notebooks](http://jupyter.org/) to load, visualize, and analyze data
-* Run Notebooks in [IBM Data Science Experience](https://datascience.ibm.com/)
+* Run Notebooks in [IBM Watson Studio](https://dataplatform.ibm.com/)
 * Leverage [Apache SystemML](http://systemml.apache.org) as a machine learning library
 
 The intended audience for this Code Pattern is both application developers and other stakeholders who wish to utilize the power of Data Science quickly and effectively to solve machine learning problems using Apache SystemML. Although Apache SystemML provides various out-of-the box algorithms to experiment with, this specific Code Pattern will provide a Linear Regression example to demonstrate the ease and power of Apache SystemML. Additionally, users can develop their own algorithms using Apache SystemML's Declarative Machine Language (DML) which has R or Python like syntax, or customize any algorithm provided in the package. For more information about additional functionality support, documentation, and the roadmap, please visit [Apache SystemML](http://systemml.apache.org).
@@ -14,14 +16,14 @@ The intended audience for this Code Pattern is both application developers and o
 
 ## Flow
 
-1. Load the provided notebook onto the IBM Data Science Experience platform.
+1. Load the provided notebook onto the IBM Watson Studio platform.
 2. The notebook interacts with an Apache Spark instance.
 3. A sample big data dataset is loaded into the Jupyter Notebook.
 4. To perform machine learning, Apache SystemML is used atop Apache Spark.
 
 ## Included Components
 
-* [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 * [IBM Analytics for Apache Spark](https://console.ng.bluemix.net/catalog/services/apache-spark): An open source cluster computing framework optimized for extremely fast and large scale data processing.
 
 ## Featured technologies
@@ -45,19 +47,21 @@ There comes the “State of the Art” from SystemML. With SystemML data scienti
 
 Follow these steps to setup and run this Code Pattern. These steps are described in detail below.
 
-1. [Sign up for the Data Science Experience](#1-sign-up-for-the-data-science-experience)
+1. [Sign up for the Watson Studio](#1-sign-up-for-watson-studio)
 2. [Create the notebook](#2-create-the-notebook)
 3. [Run the notebook](#3-run-the-notebook)
 4. [Save and Share](#4-save-and-share)
 
-## 1. Sign up for the Data Science Experience
+## 1. Sign up for Watson Studio
 
-Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services will be created in your IBM Cloud account: ``DSX-Spark`` and ``DSX-ObjectStore``. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
+Sign up for IBM's [Watson Studio](https://dataplatform.ibm.com). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. Take note of your service names as you will need to select them in the following steps.
+
+> Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
 
 To create these services:
 * Login or create your [IBM Cloud](http://bluemix.net) account.
-* Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If the name has not already been used, name your service ``DSX-Spark`` so that you can keep track of it.
-* Create your Object Storage service by selecting the service type [Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/object-storage-group). If the name has not already been used, name your service ``DSX-ObjectStorage`` so that you can keep track of it.
+* Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If the name has not already been used, name your service ``Apache Spark`` so that you can keep track of it.
+* Create your Object Storage service by selecting the service type [Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/object-storage-group). If the name has not already been used, name your service ``Watson Studio-ObjectStorage`` so that you can keep track of it.
 
 > Note: When creating your Object Storage service, select the ``Swift`` storage type in order to avoid having to pay an upgrade fee.
 
@@ -65,23 +69,15 @@ Take note of your service names as you will need to select them in the following
 
 ## 2. Create the notebook
 
-First you must create a new Project:
-* From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
-* Click on ``New project`` under ``Recently updated projects``.
-* Enter a ``Name`` and optional ``Description``.
-* For ``Spark Service``, select your Apache Spark service name.
-* For ``Storage Type``, select the ``Object Storage (Swift API)`` option.
-* For ``Target Object Storage Instance``, select your Object Storage service name.
-* Click ``Create``.
-
-![](doc/source/images/create-project.png)
-
 Create the Notebook:
-* Click on your project to open up the project details panel.
-* Click ``add notebooks``.
-* Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
+* In [Watson Studio](https://dataplatform.ibm.com), click on `Create notebook` to create a notebook.
+* Create a project if necessary, provisioning an object storage service if required.
+* In the `Assets` tab, select the `Create notebook` option.
+* Select the `From URL` tab.
+* Enter a name for the notebook.
+* Optionally, enter a description for the notebook.
 * For ``Notebook URL`` enter: https://github.com/IBM/SystemML_Usage/blob/master/notebooks/Machine-Learning-Using-Apache-SystemML.ipynb
-* For ``Spark Service``, select your Apache Spark service name.
+* Select the free Anaconda runtime.
 * Click ``Create Notebook``.
 
 ![](doc/source/images/create-notebook.png)
@@ -148,7 +144,7 @@ options to specify exactly what you want shared from your notebook:
 
 * **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/code/technologies/data-science/)
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
-* **Data Science Experience**: Master the art of data science with IBM's [Data Science Experience](https://datascience.ibm.com/)
+* **Watson Studio**: Master the art of data science with IBM's [Watson Studio](https://www.ibm.com/cloud/watson-studio)
 * **Spark on IBM Cloud**: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our [Spark service](https://console.bluemix.net/catalog/services/apache-spark)
 
 # License
