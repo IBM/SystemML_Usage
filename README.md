@@ -6,11 +6,11 @@ In this Code Pattern we will use Apache SystemML running on IBM Watson Studio to
 
 When you have completed this Code Pattern, you will understand how to:
 
-* Use [Jupyter Notebooks](http://jupyter.org/) to load, visualize, and analyze data
-* Run Notebooks in [IBM Watson Studio](https://dataplatform.ibm.com/)
-* Leverage [Apache SystemML](http://systemml.apache.org) as a machine learning library
+* Use [Jupyter Notebooks](https://jupyter.org/) to load, visualize, and analyze data
+* Run Notebooks in [IBM Watson Studio](https://dataplatform.cloud.ibm.com/)
+* Leverage [Apache SystemML](https://systemml.apache.org) as a machine learning library
 
-The intended audience for this Code Pattern is both application developers and other stakeholders who wish to utilize the power of Data Science quickly and effectively to solve machine learning problems using Apache SystemML. Although Apache SystemML provides various out-of-the box algorithms to experiment with, this specific Code Pattern will provide a Linear Regression example to demonstrate the ease and power of Apache SystemML. Additionally, users can develop their own algorithms using Apache SystemML's Declarative Machine Language (DML) which has R or Python like syntax, or customize any algorithm provided in the package. For more information about additional functionality support, documentation, and the roadmap, please visit [Apache SystemML](http://systemml.apache.org).
+The intended audience for this Code Pattern is both application developers and other stakeholders who wish to utilize the power of Data Science quickly and effectively to solve machine learning problems using Apache SystemML. Although Apache SystemML provides various out-of-the box algorithms to experiment with, this specific Code Pattern will provide a Linear Regression example to demonstrate the ease and power of Apache SystemML. Additionally, users can develop their own algorithms using Apache SystemML's Declarative Machine Language (DML) which has R or Python like syntax, or customize any algorithm provided in the package. For more information about additional functionality support, documentation, and the roadmap, please visit [Apache SystemML](https://systemml.apache.org).
 
 ![](doc/source/images/architecture.png)
 
@@ -24,12 +24,12 @@ The intended audience for this Code Pattern is both application developers and o
 ## Included Components
 
 * [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
-* [IBM Analytics for Apache Spark](https://console.ng.bluemix.net/catalog/services/apache-spark): An open source cluster computing framework optimized for extremely fast and large scale data processing.
+* [IBM Analytics for Apache Spark](https://cloud.ibm.com/catalog/services/apache-spark): An open source cluster computing framework optimized for extremely fast and large scale data processing.
 
 ## Featured technologies
 
-* [Jupyter Notebooks](http://jupyter.org/): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
-* [Apache SystemML](http://systemml.apache.org): An open source machine learning library. It allows data scientists to express machine learning algorithms through declarative language (DML) using R or Python like syntax.
+* [Jupyter Notebooks](https://jupyter.org/): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
+* [Apache SystemML](https://systemml.apache.org): An open source machine learning library. It allows data scientists to express machine learning algorithms through declarative language (DML) using R or Python like syntax.
 
 ### State of the art
 
@@ -41,7 +41,7 @@ There comes the “State of the Art” from SystemML. With SystemML data scienti
 
 # Watch the Video
 
-[![](http://img.youtube.com/vi/cYUdXFEmxP4/0.jpg)](https://www.youtube.com/watch?v=BaZPshqBFHg)
+[![](https://img.youtube.com/vi/cYUdXFEmxP4/0.jpg)](https://www.youtube.com/watch?v=BaZPshqBFHg)
 
 # Steps
 
@@ -54,14 +54,14 @@ Follow these steps to setup and run this Code Pattern. These steps are described
 
 ## 1. Sign up for Watson Studio
 
-Sign up for IBM's [Watson Studio](https://dataplatform.ibm.com). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. Take note of your service names as you will need to select them in the following steps.
+Sign up for IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. Take note of your service names as you will need to select them in the following steps.
 
 > Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
 
 To create these services:
-* Login or create your [IBM Cloud](http://bluemix.net) account.
-* Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If the name has not already been used, name your service ``Apache Spark`` so that you can keep track of it.
-* Create your Object Storage service by selecting the service type [Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/object-storage-group). If the name has not already been used, name your service ``Watson Studio-ObjectStorage`` so that you can keep track of it.
+* Login or create your [IBM Cloud](https://cloud.ibm.com/) account.
+* Create your Spark service by selecting the service type [Apache Spark](https://cloud.ibm.com/catalog/services/apache-spark). If the name has not already been used, name your service ``Apache Spark`` so that you can keep track of it.
+* Create your Object Storage service by selecting the service type [Cloud Object Storage](https://cloud.ibm.com/catalog/infrastructure/object-storage-group). If the name has not already been used, name your service ``Watson Studio-ObjectStorage`` so that you can keep track of it.
 
 > Note: When creating your Object Storage service, select the ``Swift`` storage type in order to avoid having to pay an upgrade fee.
 
@@ -70,7 +70,7 @@ Take note of your service names as you will need to select them in the following
 ## 2. Create the notebook
 
 Create the Notebook:
-* In [Watson Studio](https://dataplatform.ibm.com), click on `Create notebook` to create a notebook.
+* In [Watson Studio](https://dataplatform.cloud.ibm.com/), click on `Create notebook` to create a notebook.
 * Create a project if necessary, provisioning an object storage service if required.
 * In the `Assets` tab, select the `Create notebook` option.
 * Select the `From URL` tab.
@@ -137,18 +137,18 @@ options to specify exactly what you want shared from your notebook:
 # Links
 * [Demo on Youtube](https://www.youtube.com/watch?v=Jxi7U7VOMYg): Watch the video.
 * [What is SystemML](https://www.youtube.com/watch?v=hJfubEYDiQ8&t=428s): A video of a Chicago Spark meetup that outlines Apache SystemML basics.
-* [SystemML introduction and demo](http://cleverowl.uk/2016/05/30/systemml-introduction-and-demo): A detailed video introduction to Apache SystemML.
+* [SystemML introduction and demo](https://cleverowl.uk/2016/05/30/systemml-introduction-and-demo): A detailed video introduction to Apache SystemML.
 * [Machine Learning Framework survey results](https://www.microway.com/hpc-tech-tips/deep-learning-frameworks-survey-tensorflow-torch-theano-caffe-neon-ibm-machine-learning-stack/): An examination of current major deep learning frameworks, including a comparison of native language of framework, multi-GPU support, and aspects of usability.
 
 # Learn more
 
-* **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/code/technologies/data-science/)
+* **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/technologies/data-science/)
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
 * **Watson Studio**: Master the art of data science with IBM's [Watson Studio](https://www.ibm.com/cloud/watson-studio)
-* **Spark on IBM Cloud**: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our [Spark service](https://console.bluemix.net/catalog/services/apache-spark)
+* **Spark on IBM Cloud**: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our [Spark service](https://cloud.ibm.com/catalog/services/apache-spark)
 
 # License
 
-This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-[Apache Software License (ASL) FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+[Apache Software License (ASL) FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
